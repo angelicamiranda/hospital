@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     $especialidades = Especialidad::all();
-    return view('welcome',compact('especialidades'));
+    return view('index',compact('especialidades'));
 });
 
 Auth::routes();
